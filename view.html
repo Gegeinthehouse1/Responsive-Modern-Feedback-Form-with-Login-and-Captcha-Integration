@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/view.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <title>View - GCTU Application System</title>
+</head>
+<body>
+    <div id="particles"></div>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo-gctu.png" alt="GCTU Logo" height="100">
+        </div>
+        <nav>
+            <a href="index.html">Apply</a>
+            <a href="view.html" class="active">View</a>
+            <a href="login.html" id="logout">Logout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>STUDENT APPLICATIONS</h2>
+        <div class="actions">
+            <button id="delete-all-btn">Delete All</button>
+            <button id="delete-selected-btn">Delete Selected</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <th>Student ID</th>
+                    <th>Full Name</th>
+                    <th>Program of Study</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="edit-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">×</span>
+                <h3>Edit Application</h3>
+                <form id="edit-form"></form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag@5.1.0/dist/main.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
